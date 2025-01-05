@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Bank Management System</title>
+    <link rel="stylesheet" href="HomePage.css">
+    <script src="HomePage.js" defer></script> <!-- External JS File -->
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <h1>Blood Bank</h1>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#donation-details">Donate Blood</a></li>
+            <li><a href="#blood-request">Request Blood</a></li>
+            <li><a href="#search-blood">Search Blood</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="signup.html">Sign Up</a></li> <!-- Added Sign Up Link -->
+            <li><a href="login.html" id="logout">Logout</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="home" class="hero">
+    <div class="hero-content">
+        <h2>Welcome to Blood Bank Management System</h2>
+        <p>Saving lives, one drop at a time. Join us in our mission to ensure no one suffers due to lack of blood.</p>
+        <button onclick="scrollToSection('donation-details')">Learn About Donating</button>
+        <button onclick="scrollToSection('blood-request')">Request Blood</button>
+    </div>
+</section>
+
+<section id="donation-details" class="donation-details">
+    <h2>Blood Donation Information</h2>
+    <div class="info-box">
+        <h3>Eligibility Criteria</h3>
+        <ul>
+            <li>Age: 18-65 years</li>
+            <li>Weight: Minimum 50 kg</li>
+            <li>Good general health and feeling well on the day of donation</li>
+            <li>No recent infections, surgeries, or major illnesses</li>
+            <li>Free of diseases such as HIV, Hepatitis B, and C</li>
+        </ul>
+    </div>
+    <div class="info-box">
+        <h3>How to Prepare</h3>
+        <ul>
+            <li>Eat a healthy meal before donating</li>
+            <li>Stay hydrated by drinking plenty of water</li>
+            <li>Avoid alcohol or heavy exercise before donation</li>
+            <li>Bring a valid ID</li>
+        </ul>
+    </div>
+    <div class="info-box">
+        <h3>Benefits of Donating Blood</h3>
+        <ul>
+            <li>Helps save lives</li>
+            <li>Promotes heart health by reducing iron levels</li>
+            <li>Free mini health check-up</li>
+            <li>Boosts emotional well-being</li>
+        </ul>
+    </div>
+</section>
+
+<section id="blood-request" class="blood-request">
+    <h2>Request Blood</h2>
+    <form id="requestForm">
+        <label for="patient-name">Patient Name</label>
+        <input type="text" id="patient-name" name="patient-name" required>
+
+        <label for="required-blood-group">Blood Group Required</label>
+        <select id="required-blood-group" name="required-blood-group" required>
+            <option value="A+">A+</option>
+            <option value="A-">A-</option>
+            <option value="B+">B+</option>
+            <option value="B-">B-</option>
+            <option value="O+">O+</option>
+            <option value="O-">O-</option>
+            <option value="AB+">AB+</option>
+            <option value="AB-">AB-</option>
+        </select>
+
+        <label for="urgency">Urgency</label>
+        <select id="urgency" name="urgency" required>
+            <option value="Low">Low</option>
+            <option value="Medium">Medium</option>
+            <option value="High">High</option>
+        </select>
+
+        <label for="hospital">Hospital Name</label>
+        <input type="text" id="hospital" name="hospital" required>
+
+        <label for="contact-number">Contact Number</label>
+        <input type="tel" id="contact-number" name="contact-number" required>
+
+        <button type="submit">Submit Request</button>
+    </form>
+</section>
+
+<section id="search-blood" class="search-blood">
+    <h2>Search Blood Availability</h2>
+    <form id="searchForm">
+        <label for="search-blood-group">Blood Group</label>
+        <select id="search-blood-group" name="search-blood-group" required>
+            <option value="A+">A+</option>
+            <option value="A-">A-</option>
+            <option value="B+">B+</option>
+            <option value="B-">B-</option>
+            <option value="O+">O+</option>
+            <option value="O-">O-</option>
+            <option value="AB+">AB+</option>
+            <option value="AB-">AB-</option>
+        </select>
+
+        <label for="search-location">Location</label>
+        <input type="text" id="search-location" name="search-location" required>
+
+        <button type="submit">Search</button>
+    </form>
+</section>
+
+<section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p>Email: support@bloodbank.com</p>
+    <p>Phone: 123-456-7890</p>
+    <p>Address: 123 Blood Bank Street, City, Country</p>
+</section>
+
+<footer>
+    <p>&copy; 2024 Blood Bank Management System</p>
+</footer>
+
+</body>
+</html>

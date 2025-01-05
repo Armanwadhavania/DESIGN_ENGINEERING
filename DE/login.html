@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Bank Management - Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="login-container">
+        <img src="bb.jpg" alt="Blood Donation" />
+        <h1>Login</h1>
+        <!-- Form now uses JavaScript to handle submission -->
+        <form id="loginForm" onsubmit="return handleLogin(event)">
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" placeholder="Enter your username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            </div>
+            <button type="submit" class="login-button">Login</button>
+        </form>
+        <div class="extra-links">
+            <p>Don't have an account? <a href="signup.html">Create an Account</a> | <a href="/forgot-password">Forgot Password?</a></p>
+        </div>
+    </div>
+
+    <!-- Link to external JavaScript file -->
+    <script src="Login.js"></script>
+</body>
+</html>
