@@ -8,9 +8,9 @@
 /* Body styling */
 body {
     font-family: 'Arial', sans-serif;
-    background: linear-gradient(135deg, #FF5733, #FFB84D); /* Orange to Yellow gradient */
+    background: linear-gradient(135deg, #41bdf7, #49daf1); /* Orange to Yellow gradient */
     display: flex;
-    justify-content: center;
+    justify-content:center;
     align-items: center;
     height: 100vh;
     color: #fff; /* Text color for contrast */
@@ -45,15 +45,15 @@ body {
     width: 100px;
     height: auto;
     object-fit: contain;
-    margin-bottom: 20px; /* Space between image and form */
+    margin-bottom: 2px; /* Space between image and form */
 }
 
 /* Title styling */
 h2 {
-    font-size: 26px;
+    font-size: 20px;
     font-weight: bold;
     color: #FF5733; /* Blood Red for the title */
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 /* Input Group Styling */
@@ -92,7 +92,7 @@ h2 {
 .input-group .btn {
     width: 100%;
     padding: 12px;
-    background-color: #FF5733; /* Blood Red color */
+    background-color: #ff4e50; /* Blood Red color */
     border: none;
     border-radius: 5px;
     color: white;

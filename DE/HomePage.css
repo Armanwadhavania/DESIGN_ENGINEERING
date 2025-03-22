@@ -17,7 +17,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #b30000;
+    background-color: #45abf9;
+    /* background-color: #b30000; */
     color: white;
     padding: 1rem 2rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -55,7 +56,8 @@ header nav ul li a:hover {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #b30000; /* Solid background color, no image or gradient */
+    background-color: #ffffff;
+    /* background-color: #b30000; Solid background color, no image or gradient */
     color: white;
     text-align: center;
     padding: 0 2rem;
@@ -69,17 +71,19 @@ header nav ul li a:hover {
 .hero h2 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
-    color: #ffffff; /* White color for better visibility */
+    color: #45abf9; /* White color for better visibility */
 }
 
 .hero p {
     font-size: 1.2rem;
     margin-bottom: 1.5rem;
+    color: #45abf9;
 }
 
 .hero button {
     padding: 10px 20px;
-    background-color: #ff4d4d;
+    background-color: #49daf1;
+    /* background-color: #ff4d4d; */
     color: white;
     font-size: 1rem;
     border: none;
@@ -104,16 +108,16 @@ section h2 {
     text-align: center;
     margin-bottom: 2rem;
     font-size: 2rem;
-    color: #b30000;
+    color: #e60000;
 }
 
 /* Blood Donation Details */
 .donation-details {
-    background-color: #fff;
+    background-color: #ffffff;
     padding: 2rem;
-    border-radius: 8px;
+    border-radius: 0px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 2rem 0;
+    margin: 2rem 1;
 }
 
 .donation-details .info-box {
@@ -121,7 +125,7 @@ section h2 {
 }
 
 .donation-details .info-box h3 {
-    color: #b30000;
+    color: #e60000;
     margin-bottom: 1rem;
     font-size: 1.5rem;
 }
@@ -135,7 +139,7 @@ section h2 {
 
 /* Request Blood Section */
 form {
-    background: white;
+    background: #41bdf7;
     padding: 2rem;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -162,7 +166,7 @@ form button {
 }
 
 form button {
-    background-color: #b30000;
+    background-color: #ff4e50;
     color: white;
     border: none;
     cursor: pointer;
